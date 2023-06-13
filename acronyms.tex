@@ -1,16 +1,17 @@
 %Acronyms and Abbreviations
 % Matt Luckcuck
 % m.luckcuck@tutanota.com
-% 2021-05-27
+% 2023-06-13
 
 %Source
-% https://github.com/autonomy-and-verification-uol/acronyms
+% https://github.com/autonomy-and-verification/acronyms 
 
 %Usage
 %\newacronym{<label>}{<abbrv>}{<full>}
 
 
 \newcommand{\Genom}{G\textsuperscript{en}oM}
+\newcommand{\Vanda}{\textsc{Vanda}}
 \newcommand{\Uppaal}{\textsc{Uppaal}}
 \newcommand{\Gwen}{\textsc{Gwendolen}}
 \newcommand{\Ethan}{\textsc{ETHAN}}
@@ -25,11 +26,13 @@
 \newcommand{\eventually}{\ensuremath{\lozenge}}
 \newcommand{\always}{\ensuremath{\Box}}
 \newcommand{\lbelief}[2]{\ensuremath{\mathrm{{\mathcal B}}_{#1} \, #2}} 
-
-
+\newcommand{\assert}{\textit{ASSERT}$^{\text{TM}}$}
+\newcommand{\Framac}{\textbf{\textsf{Frama-C}}}
 
 %Temporal Logics
 \newacronym{ltl}{LTL}{Linear-time Temporal Logic}
+
+\newacronym{foltl}{FOLTL}{First-Order Linear-time Temporal Logic}
 
 \newacronym{ctl}{CTL}{Computation Tree Logic}
 
@@ -63,9 +66,13 @@
 
 \newacronym{dmars}{dMARS}{distributed Multi-Agent Reasoning System}
 
+\newacronym{mas}{MAS}{Multi-Agent System}
 
+%State-Transition Systems
 
-%Discrete Event Systems
+\newacronym{asm}{ASM}{Abstract State Machines}
+
+\newacronym{tasm}{TASM}{Timed Abstract State Machines}
 
 \newacronym{fsm}{FSM}{Finite-State Machine}
 
@@ -83,10 +90,15 @@
 
 \newacronym{mopn}{MOPN}{Marked Ordinary Petri Net}
 
+\newacronym{cpn}{CPN}{Coloured Petri Net}
+
 \newacronym{ba}{BA}{B\"{u}chi Automata}
 
 \newacronym{dtmc}{DTMC}{Discrete-Time Markov Chain}
 
+\newacronym{ctmc}{CTMC}{Continuous-Time Markov Chain}
+
+\newacronym{ioa}{IOA}{Input/Output Automata}
 
 %Process Algebra
 
@@ -98,11 +110,27 @@
 
 \newacronym{csp}{CSP}{Communicating Sequential Processes}
 
+\newacronym{hcsp}{HCSP}{Hybrid Communicating Sequential Processes}
+
+\newacronym{shcsp}{SHCSP}{Stochastic Hybrid Communicating Sequential Processes}
+
 \newacronym{ccs}{CCS}{Calculus of Communicating Systems}
 
 \newacronym{wsccs}{WSCCS}{Weighted Synchronous CCS}
 
 \newacronym{csp|b}{CSP$\|$B}{an integrated formalism combining CSP and B}
+
+% Description Languages
+
+\newacronym{vhdl}{VHDL}{VHSIC Hardware Description Language}
+
+\newacronym{adl}{ADL}{Architecture Description Language}
+
+\newacronym{slim}{SLIM}{System Level Integration Modelling}
+
+\newacronym{mal}{MAL}{Model Action Logic Language}
+
+\newacronym{acsl}{ACSL}{the ANSI C Specification Language}
 
 %Tools
 
@@ -114,13 +142,18 @@
 
 \newacronym{mcmas}{MCMAS}{Model Checker for Multi-Agent Systems}
 
+
 \newacronym{ltlmop}{LTLMoP}{Linear Temporal Logic MissiOn Planning}
 
-\newacronym{fret}{FRET}{Formal Requirements Elicitation Tool}
+\newacronym{cbmc}{CBMC}{C Bounded Model Checker}
+
+\newacronym{cadp}{CADP}{Construction and Analysis of Distributed Processes}
 
 %Others
 
-\newacronym{adl}{ADL}{Architecture Description Language}
+\newacronym{psl}{PSL}{Property Specification Language}
+
+\newacronym{fpga}{FPGA}{Field-Programmable Gate Array}
 
 \newacronym{aadl}{AADL}{Architecture Analysis and Design Language}
 
@@ -136,6 +169,10 @@
 
 \newacronym{sct}{SCT}{Supervisory Control Theory}
 
+\newacronym{sat}{SAT}{Boolean satisfiability problem}
+
+\newacronym{smt}{SMT}{Satisfiability Modulo Theory}
+
 \newacronym{ide}{IDE}{Integrated Development Environment}
 
 \newacronym{mde}{MDE}{Model-Driven Engineering}
@@ -147,6 +184,8 @@
 \newacronym{ifm}{iFM}{Integrated Formal Methods}
 
 \newacronym{ros}{ROS}{Robot Operating System}
+
+\newacronym{amcl}{AMCL}{Adaptive Monte Carlo Localisation}
 
 \newacronym{dl}{\text{\upshape\textsf{d{\kern-0.05em}L}}}{differential dynamic logic}
 
@@ -165,3 +204,37 @@
 \newacronym{sil}{SIL}{Safety Integrity Level}
 
 \newacronym{rcl}{RCL}{ROS Contract Language}
+
+\newacronym{rv}{RV}{Runtime Verification}
+
+\newacronym{rml}{RML}{Runtime Monitoring Language}
+
+\newacronym{sats}{SATS}{Small Aircraft Transportation System}
+
+\newacronym{ico}{ICO}{Interactive Cooperative Objects}
+
+\newacronym{gui}{GUI}{Graphical User Interface}
+
+\newacronym{can}{CAN}{Controller Area Network}
+
+\newacronym{pals}{PALS}{Physically Asynchronous, Logically Synchronous}
+
+% Real-Time Systems Properties
+ 
+\newacronym{mtbf}{MTBF}{Mean Time Between Failures}
+
+\newacronym{wcet}{WCET}{Worst-Case Execution Time}
+
+
+
+% Organisations / Jobs / Job Roles
+
+\newacronym{caa}{CAA}{Civilian Aviation Authority}
+
+\newacronym{atc}{ATC}{Air Traffic Control}
+
+\newacronym{dlr}{DLR}{German Aerospace Centre}
+
+\newacronym{assert}{\assert}{Analysis of Semantic Specifications and Efficient generation of Requirements-based Tests}
+
+\newacronym{rae}{RAE}{Requirements Analysis Engine}
